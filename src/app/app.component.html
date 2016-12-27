@@ -1,3 +1,12 @@
 <h1>
   {{title}}
 </h1>
+
+<ul>
+  <li *ngFor="let story of topStories">
+    <a href="{{story.url}}" target="_blank">{{story.title}}</a>
+    <div>
+      {{story.score}} points by {{story.by}} {{(story.time | amFromUnix) | amTimeAgo }} | comments ({{story.descendants}})
+    </div>
+  </li>
+</ul>
