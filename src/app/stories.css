@@ -1,0 +1,14 @@
+.stories li {
+  list-style: none;
+  margin: 10px;
+}
+
+.stories {
+  margin: 0px;
+  padding: 0px;
+}
+
+#hackernews {
+  margin: 20px;
+
+}

@@ -1,0 +1,9 @@
+<ul class="stories">
+  <li *ngFor="let story of topStories">
+    <a href="{{story.url}}" target="_blank">{{story.title}}</a>
+    <div>
+      {{story.score}} points by {{story.by}} {{(story.time | amFromUnix) | amTimeAgo }} |
+      <a routerLink="/stories/{{story.id}}/comments" routerLinkActive="active"> comments ({{story.descendants}})</a>
+    </div>
+  </li>
+</ul>
